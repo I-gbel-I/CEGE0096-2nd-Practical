@@ -1,26 +1,20 @@
 def print_string():
-	print("code started.")
+    print("code started.")
 
-if __name__=='__main__':
-	print_string()
 
-c=True
-while c:
-    n = int(input('Please enter an integer: '))
-    if n < 1 or n > 7:
-        print("not a day!")
-        c=False
-    elif n == 1:
-        print('Monday')
-    elif n == 2:
-        print('Tuesday')
-    elif n == 3:
-        print('Wednesday')
-    elif n == 4:
-        print('Thursday')
-    elif n == 5:
-        print('Friday')
-    elif n == 6:
-        print('Saturday')
-    else:
-        print('Sunday')
+if __name__ == '__main__':
+    print_string()
+
+fibo_n = int(input("enter a number for the fibonacci series:\n"))
+
+n1, n2 = 0, 1
+count = 0
+
+print("Fibonacci sequence:")
+while count < fibo_n:
+    print(n1)
+    nth = n1 + n2
+    # update values
+    n1 = n2
+    n2 = nth
+    count += 1
