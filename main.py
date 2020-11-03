@@ -5,7 +5,7 @@ def print_string():
 if __name__ == '__main__':
     print_string()
 
-fibo_n = int(input("enter a number for the fibonacci series:\n"))
+fibo_n = int(input("enter a number for the Fibonacci series:\n"))
 
 n1, n2 = 0, 1
 t = 0
